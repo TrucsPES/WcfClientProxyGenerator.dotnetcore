@@ -7,7 +7,7 @@ using WcfClientProxyGenerator.Tests.Infrastructure;
 
 namespace WcfClientProxyGenerator.Tests
 {
-    [TestFixture]
+  /*  [TestFixture]
     public class DuplexProxyTests
     {
         [Test]
@@ -96,7 +96,7 @@ namespace WcfClientProxyGenerator.Tests
         void OneWay(string input);
     }
 
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession, ConcurrencyMode = ConcurrencyMode.Reentrant)]
+    //[ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession, ConcurrencyMode = ConcurrencyMode.Reentrant)]
     public class DuplexService : IDuplexService
     {
         public string Test(string input)
@@ -120,5 +120,5 @@ namespace WcfClientProxyGenerator.Tests
 
         [OperationContract(IsOneWay = true)]
         void OneWayCallback(string input);
-    }
+    }*/
 }

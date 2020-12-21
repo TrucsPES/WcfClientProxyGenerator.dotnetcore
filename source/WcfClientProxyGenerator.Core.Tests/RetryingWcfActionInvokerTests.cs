@@ -17,17 +17,17 @@ namespace WcfClientProxyGenerator.Tests
             this.AssertThatCallRetriesOnException<ChannelTerminatedException>();
         }
 
-        [Test]
+       /* [Test]
         public void Retries_OnEndpointNotFoundException()
         {
             this.AssertThatCallRetriesOnException<EndpointNotFoundException>();
-        }
+        }*/
 
-        [Test]
+     /*   [Test]
         public void Retries_OnServerTooBusyException()
         {
             this.AssertThatCallRetriesOnException<ServerTooBusyException>();
-        }
+        }*/
 
         #region RetriesOnException
 

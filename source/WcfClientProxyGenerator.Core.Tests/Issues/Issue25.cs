@@ -6,7 +6,7 @@ using WcfClientProxyGenerator.Tests.Infrastructure;
 
 namespace WcfClientProxyGenerator.Tests.Issues
 {
-    [TestFixture]
+ /*   [TestFixture]
     public class Issue25
     {
         [Test]
@@ -33,5 +33,5 @@ namespace WcfClientProxyGenerator.Tests.Issues
 
         public class Issue25Response
         { }
-    }
+    }*/
 }

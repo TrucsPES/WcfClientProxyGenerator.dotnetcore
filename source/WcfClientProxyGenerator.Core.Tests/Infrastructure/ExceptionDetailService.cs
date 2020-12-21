@@ -12,7 +12,7 @@ namespace WcfClientProxyGenerator.Tests.Infrastructure
     /// <summary>
     /// Enabling IncludeExceptionDetailInFaults. Can't do this through a substitute
     /// </summary>
-    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
+    //[ServiceBehavior(IncludeExceptionDetailInFaults = true)]
     public class ExceptionDetailService : IExceptionDetailService
     {
         private readonly IExceptionDetailService _sub;

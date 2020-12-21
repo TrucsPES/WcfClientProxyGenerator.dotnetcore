@@ -8,7 +8,7 @@ namespace WcfClientProxyGenerator.Tests.Infrastructure
         [TearDown]
         public virtual void AfterEachTest()
         {
-            InProcTestFactory.CloseHosts();
+            //InProcTestFactory.CloseHosts();
         }
     }
 }

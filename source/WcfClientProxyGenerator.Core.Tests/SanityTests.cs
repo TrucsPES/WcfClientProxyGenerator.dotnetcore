@@ -9,7 +9,7 @@ namespace WcfClientProxyGenerator.Tests
 {
     public class SanityTests : TestBase
     {
-        [Test, Description("Asserts that we can mock a WCF service in memory")]
+      /*  [Test, Description("Asserts that we can mock a WCF service in memory")]
         public void MockedService_WorksAsExpected()
         {
             var service = Substitute.For<ITestService>();
@@ -23,9 +23,9 @@ namespace WcfClientProxyGenerator.Tests
             var proxy = ChannelFactory<ITestService>.CreateChannel(host.Binding, host.EndpointAddress);
 
             Assert.That(() => proxy.TestMethod("known"), Is.EqualTo("test"));
-        }
+        }*/
 
-        [Test, Description("Asserts that we can fault a default Client Channel")]
+    /*    [Test, Description("Asserts that we can fault a default Client Channel")]
         public void FaultHappens_WithDefaultChannelProxy()
         {
             var service = Substitute.For<ITestService>();
@@ -45,6 +45,6 @@ namespace WcfClientProxyGenerator.Tests
             // Will fault the channel
             Assert.That(() => proxy.TestMethod("bad"), Throws.Exception);
             Assert.That(() => proxy.TestMethod("good"), Throws.Exception.TypeOf<CommunicationObjectFaultedException>());
-        }
+        }*/
     }
 }

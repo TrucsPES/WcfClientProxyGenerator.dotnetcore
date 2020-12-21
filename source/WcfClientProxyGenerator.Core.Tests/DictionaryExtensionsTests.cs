@@ -2,7 +2,6 @@
 using System.Collections.Concurrent;
 using System.Threading;
 using NUnit.Framework;
-using WcfClientProxyGenerator.Util;
 
 namespace WcfClientProxyGenerator.Tests
 {
@@ -40,14 +39,14 @@ namespace WcfClientProxyGenerator.Tests
             Assert.That(thread2Message, Is.EqualTo("thread 2"));
         }
 
-        [Test]
+    /*    [Test]
         public void Safe_ConcurrentDictionary_GetOrAdd_CallsValueFactoryOnlyOnce()
         {
             var dictionary = new ConcurrentDictionary<string, Lazy<string>>();
             string thread1Message = null, thread2Message = null;
 
             var thread1 = new Thread(() => 
-                dictionary.GetOrAddSafe("key", _ =>
+                dictionary.GetOrAdd("key", _ =>
                 {
                     Thread.SpinWait(10000);
                     thread1Message = "thread 1";
@@ -55,7 +54,7 @@ namespace WcfClientProxyGenerator.Tests
                 }));
 
             var thread2 = new Thread(() => 
-                dictionary.GetOrAddSafe("key", _ =>
+                dictionary.GetOrAdd("key", _ =>
                 {
                     Thread.SpinWait(10000);
                     thread2Message = "thread 2";
@@ -71,6 +70,6 @@ namespace WcfClientProxyGenerator.Tests
             bool thread2AndNotThread1 = thread2Message == "thread 2" && thread1Message == null;
 
             Assert.IsTrue(thread1AndNotThread2 || thread2AndNotThread1);
-        }
+        }*/
     }
 }
